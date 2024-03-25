@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid_10 Media Elements</title>
+</head>
+
+<body>
+    <video src="video.mp4" controls></video>
+    <h3>Video tags</h3>
+    <li>src</li>
+    <li>hieght width</li>
+    <li>controls</li>
+    <li>autoplay</li>
+    <li>loop</li>
+    <li>muted</li>
+    <li>poster (for thumbnail) (ignores width or height until played)</li>
+
+    <h3>Audio</h3>
+    <audio src="audio.mp3" controls></audio>
+    audio doesn't work without controls.
+    <ul>
+        <li>src</li>
+        <li>controls</li>
+        <li>autoplay</li>
+        <li>loop</li>
+        <li>muted (in case of multiple audio) </li>
+        <li>preload </li>
+        <ul>
+            <li>none</li>
+            <li>metadata</li>
+            <li>auto</li>
+        </ul>
+    </ul>
+
+    <h2>SVGs</h2>
+
+    <h3>SVG</h3>
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+
+    <h3>SVG using img tag</h3>
+    <img src="image.svg" alt="image.svg should appear here">
+    We have to add xmlns="http://www.w3.org/2000/svg"></svg>  if using a svg saved elsewhere. It is called namespace declaration.
+
+    <h2>iframe</h2>
+    Used to emebed another website.
+    <iframe src="https://www.google.com" frameborder="3" width="400" height="500"></iframe>
+
+    WE can use iframe to embed youtube videos as well.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=zqwWBC_Mwz-s7UPK&amp;start=45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    We can embed google maps as well
+<iframe src="https://maps.google.com/maps?q=LOCATION&output=embed" frameborder="0" width="500"></iframe>
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid_7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    Form action can be get or post. <br>
+    Post request is used to send large data.
+    id attribute is used to uniquely identify the element.
+    <form action="post">
+
+        <!-- Label for "Unique id of element" -->
+        <label for="ID">Enter your username</label>
+        <input type="text" id="ID" name="Username" placeholder="This is placeholder"> <br>
+        If I write label after input tag it appears after it (on right). <br>
+
+        autofocus automatically focuses the cursor when pages is loaded.
+        <div>
+            <input type="text" id="ID" name="Username" placeholder="This is placeholder" required autofocus> <br>
+            <h3>Radio type checkbox</h3>
+            <input type="radio" id="Checkbox 1" name="Checkbox 1" value="Yes">
+
+            <label for="Checkbox 1">Yes</label>
+            <input type="radio" id="Checkbox 2" name="Checkbox 1" value="Yes">
+            <label for="Checkbox 2">No</label>
+
+            if the name of two radio buttons is same only one can be clicked at a time.
+        </div>
+        <h3>Checkbox</h3>
+        <div>
+            <input type="checkbox" name="checkbox name" id="Checkbox 3" value="Yes">
+            <label for="Checkbox 3"> Are you sure ??????</label>
+        </div>
+
+        <label for="textarea 1"> Below is a textbox</label>
+        <textarea name="textarea 1" id="textarea 1" cols="40" rows="10">Ideally this should be empty!</textarea>
+
+        <br>Using br tag is not recommended. <br>
+        Even if we click on the label displayed on the page the same ID block is checked.
+
+        <!-- Dropdown list -->
+        <div>
+            <Select name="Choose any of the options">
+                <option value="Oye">Oye</option>
+                <option value="Yo">Yo</option>
+                <option value="Hey">Hey</option>
+            </Select>
+        </div>
+
+        <!-- pattern tag -->
+        <div>
+            <input type="text" pattern="[A-Z]"?  name=name >
+        </div>
+    </form>
+
+    <div> Passwords are sent using post request.
+    </div>
+
+</body>
+
+</html>

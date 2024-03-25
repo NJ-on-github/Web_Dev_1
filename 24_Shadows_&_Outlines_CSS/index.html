@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid 24 Shadows and Outlines CSS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(25, 25, 25);
+            color: azure;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+
+    <style>
+
+        /* div{
+            border:3px solid rgb(239, 245, 59);
+            padding: 4vh;
+            margin: 50vh 10vh;
+        } */
+
+        .shadow_1{
+            box-shadow: 5px 5px 10px 3px #838282;
+            margin: 50vh 20vh;
+        }
+        
+        .shadow_2{
+            box-sizing: border-box;
+            border:3px solid rgb(239, 245, 59);
+            padding: 4vh;
+            box-shadow:  5px 5px 10px 3px #838282 inset;
+            /* or */
+            box-shadow: inset  5px 5px 5px 1px #d7e16a;
+            margin: 50vh 10vh;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .text-shadow{
+            box-sizing: border-box;
+            border:3px solid rgb(239, 245, 59);
+            padding: 4vh;
+            text-shadow: 5px 5px 4px #d2dde9;
+            margin: 50vh 10vh;
+        }
+
+        .outline{
+            border: 10px solid pink;
+            outline: 5px solid blue;
+            padding: 4vh;
+            margin: 50vh 10vh;
+            outline-offset: -5px;
+        }
+        
+
+    </style>
+</head>
+
+
+<body>
+    <h2>
+        box Shadows
+    </h2>
+    <p>
+        box-shadow: h-offset v-offset blur spread color inset; <br>
+        text-shadow: h-offset v-offset blur color; <br>
+        outline: width style color;
+    </p>
+
+    <div class="shadow_1">
+        This is a div with shadow 1.
+    </div>
+
+    <div class="shadow_2">
+        This is a div with shadow 2.
+    </div>
+
+    <div class="text-shadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem eum voluptatibus neque vitae provident! Fugit et blanditiis nam quibusdam dolorum eligendi laborum. Laboriosam, voluptas.
+    </div>
+
+    <div class="outline">
+        This div has outline.
+    </div>
+
+    <p>
+        Outline is on the on the outside of border and not a part box sizing, whereas border is part of box-sizing. Outlines can't have different widths like border. For roundedness we can curve the border using border radius and outline will follow border radius.
+    </p>
+</body>
+
+</html>

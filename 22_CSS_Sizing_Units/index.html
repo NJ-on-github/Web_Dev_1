@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid_ 22 Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(25, 25, 25);
+            color: azure;
+        }
+
+        html{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+        }
+
+        h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1.px{
+            box-sizing: border-box;
+            border: 5px solid rgb(255, 255, 255);
+            width: 250px;
+        }
+        h1.vw{
+            box-sizing: border-box;
+            border: 5px solid rgb(212, 180, 180);
+            padding: 1vw;
+            width: 100vw;
+        }
+        h1.vw.margin-auto{
+            padding: 1vw;
+            box-sizing: border-box;
+            border: 5px solid rgb(255, 255, 255);
+            width: 50vw;
+            margin: auto;
+        }
+        h1.vw.margin-vertical-auto.height-vh{
+            padding: 1vw;
+            box-sizing: border-box;
+            border: 5px solid rgb(255, 255, 255);
+            width: 50vw;
+            height: 100vh;
+
+            /* This gives 25 px of vertical margin and rest is auto. This is margin shorthand property */
+            margin:  25px auto;
+        }
+        
+        div{
+            padding: 1vw;
+            box-sizing: border-box;
+            border: 5px solid rgb(255, 255, 255);
+            width: 50vw;
+            margin:  25px auto;
+            font-size: 10px;
+        }
+
+        div p{
+            /* This just means times the no. of original size. 2em = 2 * times of size of what it would have got by default */
+            font-size: 2em;
+        }
+
+        div.rem{
+            /* This is used for 2 times of root element */
+            font-size: 2rem;
+        }
+
+        div.cont{
+            padding: 1vw;
+            box-sizing: border-box;
+            border: 3px solid rgb(47, 189, 224);
+
+
+            /* This mieans 100% of minimum values */
+            width: 100vmin;
+            /* margin:  25px auto; */
+            font-size: 10px;
+        }
+
+        div.min_h{
+            /* note my style is getting added (the previous style is also getting applied.) */
+            min-height: 80vh;
+        }
+
+        /* element with class ccc will have 50% width of its parent. */
+        .ccc{
+            width: 50%;
+        }
+
+        .aaa {
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="px">This is h1</h1>
+    <h1 class="vw">vw = view port width</h1>
+    <h1 class="vw margin-auto">vw = view port width with margin auto</h1>
+    <h1 class="vw margin-vertical-auto height-vh">vw = view port width with margin vertical and auto</h1>
+    <p>
+        Margin auto works on block element only.
+    </p>
+    <p>
+        pixel is 1/96th of inch.
+        width doesnt work on inline elements
+    </p>
+
+
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, totam cum ullam aliquam nemo fugiat nostrum tenetur dignissimos eum dolores recusandae a explicabo autem ducimus.
+        </p>
+    </div>
+
+    <div class="rem">
+        html is a root element.
+    </div>
+
+    <div class="cont">
+        vmin and vmax <br>
+        vmin = minimum height or minimum width, whichever is minimum.
+    </div>
+
+    <div class="min_h">
+        This div should have a minimum height.
+    </div>
+    <div class="percent">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur facere assumenda, nulla ratione velit ipsa sint, aspernatur maiores tempora modi asperiores tenetur nemo ducimus recusandae.
+    </div>
+
+    <div>
+        <p class="ccc">
+            This is a span inside div. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur officiis voluptas reprehenderit enim harum dolore?
+        </p>
+    </div>
+
+    <div>
+        First level div.
+        <div>
+            Second Level div.
+            <div class="aaa">
+                Third level div.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

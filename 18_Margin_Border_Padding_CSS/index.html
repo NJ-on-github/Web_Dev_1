@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid_18</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .class_1 {
+            background-color: aquamarine;
+        }
+
+        .class_1-1 {
+            color: brown;
+            padding: 10px;
+            margin: 15px;
+            border: 2px solid blueviolet;
+            /* border-color: blueviolet; */
+            height: 350px;  /*this got applied to the content and padding and border were not included.*/
+            box-sizing: border-box;  /*Now include border and padding but not margin*/
+        }
+
+        .class_1-2 {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Margin, Border & Padding</h1>
+
+    div, box, span everything is a box in CSS. <br>
+    <div class="class_1">This is a div.</div> <br>
+    <div class="class_1 class_1-1">This has class 1 and class 1-1</div> <br>
+    <div class="class_1 class_1-2">This has class 1 and class 1-2</div> <br>
+
+    padding area has background,
+
+    Total height or width of an element includes margin, border & padding. -.-.
+
+    <h2>Margin Overlapping</h2>
+    If margins of two elements are colliding the greater margin will be applied.
+
+</body>
+
+</html>

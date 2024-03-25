@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid 26 CSS Overflow Property</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            /* margin: 0; */
+            /* padding: 0; */
+            background-color: rgb(25, 25, 25);
+            color: azure;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+
+    <style>
+        .box1{
+            height: 40vh;
+            width: 80vw;
+            border: 2px solid;
+
+            /* This gives scroll bar. */
+            overflow: scroll;
+            
+            /* This puts everything in one line. */
+            white-space: nowrap;
+
+            /* This just uses ellipses wherever text is overflowing */
+            /* If I use overflow : clip I can't use scroll */
+            text-overflow: ellipsis;
+        }
+
+        .box2{
+            height: 20vh;
+            width: 40vw;
+            border: 2px solid;
+
+            /* This gives scroll bar. */
+            overflow: scroll;
+            
+            /* This gives scroll bar if content is overflowing */
+            overflow: auto;
+        }
+
+        .box3{
+            height: 20vh;
+            width: 40vw;
+            border: 2px solid;
+
+            /* This gives scroll bar if content is overflowing */
+            /* overflow: auto; */
+
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /* or */
+            overflow: hidden auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        This is box 1 and I will be writng lorem ipsum now Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quidem! Nulla sequi necessitatibus iste eligendi voluptatem? <br> Saepe vel amet dolorem, consequuntur perferendis voluptatem at non necessitatibus eaque quis tempore, dolor incidunt voluptates doloribus reiciendis quod dolorum architecto. Ipsam quos commodi numquam culpa rerum asperiores, ipsa sint placeat molestiae, eius distinctio.
+    </div>
+
+    <div class="box2">
+        This is box 1 and I will be writng lorem ipsum now Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quidem! Nulla sequi necessitatibus iste eligendi voluptatem? Saepe vel amet dolorem, consequuntur perferendis voluptatem at non necessitatibus eaque quis tempore, dolor incidunt voluptates doloribus reiciendis quod dolorum architecto. Ipsam quos commodi numquam culpa rerum asperiores, ipsa sint placeat molestiae, eius distinctio.
+    </div>
+
+    <div class="box3">
+        This is box 1 and I will be writng lorem ipsum now Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quidem! Nulla sequi necessitatibus iste eligendi voluptatem? Saepe vel amet dolorem, consequuntur perferendis voluptatem at non necessitatibus eaque quis tempore, dolor incidunt voluptates doloribus reiciendis quod dolorum architecto. Ipsam quos commodi numquam culpa rerum asperiores, ipsa sint placeat molestiae, eius distinctio.
+    </div>
+</body>
+</html>

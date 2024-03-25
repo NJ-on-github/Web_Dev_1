@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid_17 CSS Selectors</title>
+    <style>
+        
+        /* class selector 
+        */
+        .red-bg{
+            background-color: brown;
+            color: aliceblue;
+        }
+        /* id selector (If I write this without comment the next selector stops working*/
+        #first-id{
+            background-color: aquamarine;
+        }
+
+        /* child selector */
+        div > p{
+            color: blue;
+        }
+        /* Above one only works if paragraph is child of a div. */
+
+
+        /* descendent selector */
+        /* works on any p under div even if that p is inside any ither element or tag. */
+        
+        div p{
+            background-color: antiquewhite;
+            color: darkslategrey;
+        }
+ 
+
+        /* Universal Selector */
+        *{
+            margin: 30px;
+            /* padding: 10px; */
+        }
+
+
+        /* psuedo selector */
+        a:visited{
+            color:orange
+        }
+
+        a:link{
+            color: rgb(15, 216, 75);
+        }
+
+        a:active{
+            background-color: brown;
+            color: aqua;
+        }
+
+        a:hover{
+            color: aliceblue;
+            background-color: black;
+        }
+
+        
+        /* works if p is first child of anything */
+        p:first-child{
+            color: antiquewhite;
+            background-color: #653f3f;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS - Selectors</h1>
+    <div class="red-bg">This is a div</div>
+    <div id="first-id">This is second div</div>
+    <div>
+        <p>Para inside div.</p>
+    </div>
+    <div>
+        <article>
+            <p>This is a paragraph of a article inside a div.</p>
+        </article>
+    </div>
+
+    <div>
+        <a href="https://www.google.com">google</a>
+        <a href="https://www.wikipedia.com">wikipedia</a>
+    </div>
+
+    <span>
+        <p>
+            Para(first child) inside a span 
+        </p>
+    </span>
+
+</body>
+</html>
