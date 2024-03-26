@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid 28 CSS Position Property</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            /* margin: 0; */
+            /* padding: 0; */
+            background-color: rgb(25, 25, 25);
+            color: azure;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+
+    <style>
+        .box {
+            margin: 12px auto;
+            border: 2px solid white;
+            padding: 5vw;
+            height: 90px;
+            width: 80vw;
+            box-sizing: border-box;
+        }
+
+        .box-1 {
+            position: absolute;
+            /* z-index: 1; */
+            background-color: aqua;
+            top: 1px;
+        }
+        
+        .box-2 {
+            position: relative;
+            top: 10vh;
+            left: 20px;
+            background-color: brown;
+        }
+        
+        .parent{
+            width: 90vw;
+            border: 2px solid palevioletred;
+            margin: 15px;
+            padding: 5px;
+            box-sizing: border-box;
+            position: relative;
+            
+        }
+
+        .box-3 {
+            position: relative;
+            top: -10vh;
+            left: 20px;
+            background-color: burlywood;
+        }
+
+        .box-4{
+            position: fixed;
+            background-color: rgb(184, 212, 24);
+            bottom: 5px;
+        }
+        
+        .box-5{
+            position: sticky;
+            background-color: rgb(73, 37, 74);
+            bottom:0px
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa, adipisci ut obcaecati, alias, consequatur saepe doloribus sequi culpa officiis consequuntur rem ipsum eligendi quia? Incidunt eaque a alias consectetur? Debitis illum eligendi, quod dolorem obcaecati laboriosam, quibusdam impedit sequi cupiditate vitae asperiores eius doloribus commodi cumque? Magni id nemo possimus beatae repellat corrupti maxime laboriosam, maiores aperiam facere vero alias libero eveniet amet itaque, accusantium quia nesciunt animi ad dolores dicta quas modi molestias autem! Repellendus quaerat officia sunt ab nulla? Quam unde ex dolor, soluta quis maxime quibusdam nostrum aliquid eum odio eos aspernatur provident consequuntur quo facilis, neque dicta! Molestias facere ipsam obcaecati accusamus, eius deserunt provident, voluptas architecto consectetur accusantium dolor nobis perspiciatis rerum amet dolores nemo doloribus sit nihil quas labore placeat laboriosam quam ipsa! Accusamus in exercitationem distinctio vitae ipsa culpa officia quo, excepturi odio ab earum quasi. Mollitia deserunt itaque debitis. Esse, at!
+    </p>
+    <div class="parent">
+
+        <div class="box box-1">
+
+        </div>
+        <div class="box box-2">
+
+        </div>
+        <div class="box box-3">
+
+        </div>
+        <div class="box box-4">
+
+        </div>
+        <div class=" box box-5">
+
+        </div>
+    </div>
+
+    <p>
+        Position static is default. <br>
+        static means element will stay wherever it is. <br>
+
+        <h3>Relative position</h3> <br>
+        To use z-index we have to make position anything other than static. <br>
+
+        <h3>Absolute</h3>
+        This sets the position relative to nearest positioned parent (ancestor).
+        Nearest positioned ancestor. (non static parent). <br>
+
+        EXCEPTION: Transform, filter and perspective property can also make an element appear as positioned.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium voluptatum, ab, voluptate obcaecati reprehenderit repellendus, sint magni quos optio quia numquam! Tenetur provident explicabo obcaecati ullam. Deserunt architecto quia aliquam accusantium adipisci, obcaecati repellat labore deleniti illo laudantium ad corporis animi, ducimus doloribus, voluptas quisquam quae eaque sapiente perspiciatis inventore natus vero fugiat minus. Iure id nulla quo laborum eaque consectetur, magni quasi assumenda fugiat dicta sint molestiae odio, neque quisquam aperiam facere quam dignissimos, earum perspiciatis. Quas ad corporis vel enim! Quis libero vitae dolores laborum perferendis est, corrupti doloribus, totam magnam eligendi aperiam et harum saepe obcaecati sunt iste voluptate nulla amet maiores consequatur recusandae. Maxime amet nam, unde a aut suscipit excepturi veniam quae! Ipsam modi nemo cumque veniam culpa, laudantium quidem sed rem at, eveniet nesciunt doloribus ipsa aperiam aut cupiditate pariatur voluptatibus ab numquam? Nesciunt voluptate vero deserunt aliquam dolorum nobis, rerum ipsam? Saepe aut quo labore fuga ex. Odit explicabo doloribus similique, illum, numquam suscipit nulla sit et, alias perspiciatis nisi vero praesentium dolorem. Odit, obcaecati repellat. Eius reiciendis, in, deleniti, natus magnam ea placeat ipsam voluptas earum ratione illo eveniet eaque at cupiditate beatae sed aut! Odio qui ullam aperiam similique! Architecto necessitatibus, enim aut aperiam reprehenderit odit soluta, est nihil ad sint nemo debitis quasi. Inventore, porro pariatur, temporibus dolore, quidem esse dicta velit error officiis reiciendis praesentium tenetur soluta! Sed at laudantium, quod nam dolor nisi rem esse praesentium voluptas expedita, cum accusantium officia ipsum impedit beatae ab labore nulla enim possimus saepe nesciunt. Provident, consequatur.
+    </p>
+</body>
+
+</html>
