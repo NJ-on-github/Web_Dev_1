@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(25, 25, 25);
+            color: azure;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+    <style>
+        /* Declaring root scope */
+        /* Everything in root is global variable */
+        :root {
+            --color: rgb(41, 41, 99);
+            --seccolor: rgb(49, 49, 73);
+            --defpad:12px;
+            --defop:0.5;
+        }
+
+        .nav {
+            /* this display will not work */
+            display: flex;
+            background-color: var(--color);
+        }
+
+        ul {
+            background-color: var(--color);
+            display: flex;
+            /* background-color: aquamarine; */
+
+        }
+
+        ul li {
+            opacity: var(--defop);
+            list-style: none;
+            background-color: var(--color);
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+            /* These variables can hold background, URLs, Strings, Numbers */
+        }
+
+        /* local variable */
+        ul li:first-child{
+            --color:rgb(243, 140, 14);
+            --seccolor:rgb(75, 57, 61);
+            /* blue isfallback variable */
+            color: var(--seccolor, blue);
+        }
+
+        .desc {
+            background-color: var(--seccolor)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+    <div class="desc">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium officiis nobis exercitationem
+        quo qui consequuntur nemo harum culpa eius, expedita fugiat dolorem nihil tempora blanditiis nisi voluptate
+        beatae eligendi quas unde incidunt, ab mollitia. Reprehenderit explicabo laboriosam ducimus earum molestias quis
+        quisquam, voluptas amet ullam eligendi labore alias deleniti?
+    </div>
+</body>
+
+</html>

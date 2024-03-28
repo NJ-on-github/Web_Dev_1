@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design (Exercise 3)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #eaeff1;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .box-1 {
+            background-color: #ffffff;
+            width: 60vw;
+            height: auto;
+            border-radius: 15px;
+            margin: 90px auto;
+            position: static;
+        }
+
+        .box-2 {
+            display:block;
+            background-color: aquamarine;
+            position: relative;
+            margin-top: 150px;
+            margin: auto;
+            width: 50vw;
+            height: 30vh;
+            z-index: 2;
+            margin-bottom: 5px;
+            /* overflow: hidden; */
+        }
+
+        .tag-1{
+
+            margin-left: 3vw;
+            background-color: inherit;
+            display: inline-block;
+            
+            border:1px solid #9da7b4;
+            color: #61656b;
+            padding: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 30px;
+            font-size: 0.7em;
+        }
+        .tag-2{
+            display: inline-block;
+            
+            font-size: 0.7em;
+            margin-left: 3vw;
+            background-color: inherit;
+            border:1px solid #9da7b4;
+            color: #61656b;
+            padding: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 30px;
+        }
+        
+        .h1 {
+            margin-left: 3vw;
+            background-color: inherit;
+            font-weight: 500;
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+        
+        .content {
+            margin-left: 3vw;
+            margin-right: 3vw;
+            margin-top: 15px;
+            background-color: inherit;
+            /* font-weight; */
+            font-size: 0.5emem;
+            color: #858a92;
+        }
+        
+        .cta{
+            font-size: 0.7em;
+            background-color: inherit;
+            margin: auto;
+            background-color: #e0efff;
+            color: #238aff;
+            display: inline-block;
+            padding: 15px;
+            border-radius: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-1">
+        <div class="box-2">
+            <!-- <img src="arseny-togulev-kGix6_gPKjI-unsplash.jpg" alt="This should have unsplash image" height="inherit -10vh" width="inherit -10vh"> -->
+        </div>
+
+        <div class="tag-1">
+            Nature
+        </div>
+        <div class="tag-2">
+            Lake
+        </div>
+
+        <div class="h1">
+            Lago Di Braies
+        </div>
+
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quas voluptatibus ad eum esse officia
+            dolore.
+        </div>
+
+        <div class="cta">
+            Read More
+        </div>
+    </div>
+</body>
+
+</html>
