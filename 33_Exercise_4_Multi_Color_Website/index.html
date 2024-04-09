@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+
+    <style>
+:root{
+    --bt_bg:rgb(237, 234, 234);
+    --bt_text: rgb(25,25,25);
+    --bt_border: rgb(0,0,0);
+    --nav_bar_bg: rgb(0,0,0);
+    --nav_bar_shadow: rgb(180, 56, 56);
+    --body_bg: rgb(57, 57, 57);
+
+
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-position: inside;
+            display: flex;
+        }
+
+        ul li {
+            padding: 25px;
+            margin: auto auto;
+            background-color: var(--bt_bg);
+            border: 1.5px solid var(--bt_border);
+            border-radius: 4px;
+            height: 5px;
+            text-align: center;
+            list-style: none;
+
+        }
+        div{
+            padding:5vh;
+            box-shadow: 2px 2px 5px var(--nav_bar_shadow);
+            background-color: var(--nav_bar_bg);
+        }
+
+        body{
+            background-color: var(--body_bg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+
+</html>

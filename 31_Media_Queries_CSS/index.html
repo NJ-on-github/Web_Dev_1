@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        /* Syntax: 
+        @media not|only mediatype and (expressions) {
+            CSS code
+        } */
+        /* 
+        @media only screen and (max-width: 600px) {
+            body{
+                /* this gets applied until width is 600px or less. */
+        /* background-color: blue;
+            }
+        }  */
+
+
+        /* @media only screen and (min-width: 400px) { */
+            /* body { */
+                /* this gets applied if width is minimum 400px */
+                /* background-color: rgb(205, 218, 20); */
+            /* } */
+        /* } */
+
+        @media only screen and (max-width: 400px) {
+            body {
+                /* this gets applied if width is minimum 400px */
+                background-color: rgb(205, 218, 20);
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        @media  screen and (orientation:landscape) {
+            body{
+                border: 25px solid purple;
+                background-color: orange;
+            }
+            
+            
+        }
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 70px;
+            height: 70px;
+            background-color: brown;
+            margin: 2vh;
+            /* display: inline-block; */
+        }
+
+    </style>
+</head>
+
+<body>
+    Different media types
+    <ul>
+        <li>all </li>
+        <li>print</li>
+        <li>screen</li>
+        <li>speech</li>
+    </ul>
+    <br>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

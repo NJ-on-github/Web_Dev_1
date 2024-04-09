@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box::first-line {
+            color: rgb(147, 199, 248);
+        }
+
+        .boxes * {
+            border: 2px solid black;
+            ;
+        }
+
+        * {
+            background-color: gray;
+            color: aliceblue;
+        }
+
+        p,
+        a,
+        .box,
+        [margin-style="primary"] {
+            padding-top: 30px;
+        }
+
+        .box:nth-child(even) {
+            background-color: brown;
+        }
+
+        .box:nth-last-child(1) {
+            background-color: darkgreen;
+        }
+
+        /* We can enter element dynamically using CSS */
+        /* These are called psuedo elements */
+        .boxes::before {
+            content: "Before content";
+            color: rgb(14, 34, 186);
+        }
+
+        .boxes::after {
+            color: rgb(239, 243, 13);
+            content: "After content";
+        }
+
+        ::selection {
+            background-color: aliceblue;
+            color: red;
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 3em;
+        }
+
+        input::placeholder{
+            color: rgba(240, 248, 255, 0.616);
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eum magnam nisi iure id fuga
+            expedita pariatur nostrum unde consequatur excepturi cum sapiente, officiis hic praesentium, ipsam,
+            consectetur natus quam.</div>
+        <div class="box">Box 2</div>
+        <div class="box" margin-style="primary">Box 3</div>
+
+        <input type="text" placeholder="placeholder">
+    </div>
+</body>
+
+</html>
