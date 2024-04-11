@@ -5,14 +5,17 @@
 font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: rgb(54, 54, 54);
+  color: rgb(250, 253, 255);
 }
 
 .item{
     background-color: blueviolet;
-    border: 2px solid salmon;
+    border: 1px solid salmon;
     height: 25px;
     width: 25px;
-    margin: 2px;
+    /* margin: 2px; */
+    box-sizing: border-box;
     color: aliceblue;
 }
 .item2{
@@ -20,7 +23,7 @@ font-family: "Poppins", sans-serif;
     border: 2px solid salmon;
     height: 35px;
     width: 25px;
-    margin: 2px
+    /* margin: 2px */
 }
 
 .container{
@@ -75,7 +78,38 @@ font-family: "Poppins", sans-serif;
 
     /* align-items: center; */
 
-    align-content: center;
+    /* align-content: center; */
     /* it can also be flex start, flex end etc. */
+
+
+    flex-flow: row wrap;
+    /* shorthand property for setting flex direction and flex wrap */
+
+    /* gap: 30px;
+    column-gap: 5px;
+    row-gap: 20px;
+    gap: 30px 50px; */
 }
+
+.order-1{
+    order: 1;
+}
+
+.grow-1{
+    flex-grow: 1;
+}
+
+.grow-2{
+    /* flex-grow: 2; */
+    flex-shrink: 2;
+}
+
+.align-self-start{
+    align-self: flex-start;
+    /* to use this we have to diasable algin content in container. */
+}
+.align-self-end{
+    align-self: flex-end;
+}
+
 
