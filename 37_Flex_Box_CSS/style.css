@@ -1,0 +1,81 @@
+*{
+    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.item{
+    background-color: blueviolet;
+    border: 2px solid salmon;
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+    color: aliceblue;
+}
+.item2{
+    background-color: rgb(58, 188, 67);
+    border: 2px solid salmon;
+    height: 35px;
+    width: 25px;
+    margin: 2px
+}
+
+.container{
+    border: 2px solid black;
+    display:flex;
+    height: 80vh;
+
+    justify-content: flex-end;
+    /* justify to end (right) of flex box */
+    justify-content: flex-start;
+    /* justify to left (starting) of flex box */
+    justify-content: right;
+    /* justify to right of flex box */
+    justify-content: space-around;
+    /* Space around every element space in between border of container and first and last element as well */
+    justify-content: space-between;
+    /* Space in between every element and NO space in between border of container and first and last elements */
+
+    justify-content: space-evenly;
+    /* puts space evenly between all items and border of the container (same space between every item and border of container.
+    whereas
+    space around puts half space of space in between elements in between border of container and first and last element */
+    
+    /* Baseline aligns all the items on theier baseline*/
+
+    align-items: center;
+    /* justify-content: center; */
+    /* Same  options as justify can be used*/
+
+    flex-direction: column;
+    /* Lays items top to down */
+    
+    flex-direction: column-reverse;
+    /* Lays items down to top */
+    
+    flex-direction: row;
+    /* Lays items left to right */
+
+    flex-direction: row-reverse;
+    /* Lays items right to left */
+
+    /* .... */
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    /* Wraps the overflowing content */
+
+    /* flex-wrap: wrap-reverse; */
+    /* Starts from bottom */
+    /* no wrap is default property */
+
+
+    /* align-items: center; */
+
+    align-content: center;
+    /* it can also be flex start, flex end etc. */
+}
+

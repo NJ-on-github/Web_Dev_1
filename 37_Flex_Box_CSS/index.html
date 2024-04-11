@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+
+        </div>
+    </main>
+
+    <p>
+        1.
+        WE can give display as flex to the container (not items), this makes all the inside element go left to right by
+        default.
+
+        If the items overflow they start squeezing.
+        Still mostly we use flex as display property.
+
+        2.
+        justify-content-center.
+        Centers the items inside the container horizontally.
+
+        align item center.
+        Centers the items inside the container vertically.
+
+
+    <pre>
+
+    justify-content: flex-end;
+    /* justify to end (right) of flex box */
+
+    justify-content: flex-start;
+    /* justify to left (starting) of flex box */
+
+    justify-content: right;
+    /* justify to right of flex box */
+
+    justify-content: space-around;
+    /* Space around every element space in between border of container and first and last element as well */
+
+    justify-content: space-between;
+    /* Space in between every element and NO space in between border of container and first and last elements */
+
+    justify-content: space-evenly;
+    /* puts space evenly between all items and border of the container (same space between every item and border of container).
+    whereas
+    space around puts half space of space in between elements in between border of container and first and last element */
+
+    
+    /* Baseline aligns all the items on theier baseline*/
+    
+    
+</pre>
+
+    <h2>flex direction</h2>
+    By default left to right.
+
+    <pre>
+    flex-direction: column;
+    /* Lays items top to down */
+    
+    flex-direction: column-reverse;
+    /* Lays items down to top */
+    
+    flex-direction: row;
+    /* Lays items left to right */
+
+    flex-direction: row-reverse;
+    /* Lays items right to left */
+    </pre>
+
+    <h2>Working of justfiy and align</h2>
+    When flex direction is row. The x-axis(left to right) becomes the main axis and y-axis(top to down) becomes the
+    cross axis (perpendicular to main axis).
+
+    <img src="Screenshot 2024-04-10 231113.png" alt="explainaton img 1" width="250px">
+
+    <img src="Screenshot 2024-04-10 231336.png" alt="explainaton img 2" width="250px">
+
+    justify content center means to justify items center on main axis.
+    <br>
+    <br>
+    if flex direction is row, it centers horizontally. <br>
+    if flex direction is column, it centers items vertically.
+
+    <br>
+    <ul>
+        <li>main start, cross start, </li>main end, cross end.
+        <li>main size, cross size,</li>
+    </ul>
+
+    <h2>Flex Wrap</h2>
+    <pre>
+        flex-wrap: wrap;
+        /* Wraps the overflowing content */
+        flex-wrap: wrap-reverse;
+        /* Starts from bottom */
+        /* no wrap is default property */
+    
+        /* align-items: ; */
+    </pre>
+    <h3>align item * align content</h3>
+    align content is used for multiple rows.
+    align item is used for a single line.
+<br>
+There is no justify items.
+
+    </p>
+</body>
+
+</html>
