@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+    <h2>Grid 2</h2>
+    <p>
+    <pre>
+            ..container {
+                border: 2px solid black;
+                display: grid;
+                grid-template-areas: "nav nav nav" "side article article" "footer footer footer";
+            }
+            
+            .item {
+                border: 2px solid saddlebrown;
+                height: 44px;
+                /* width: 44px; */
+            }
+            
+            .item-1 {
+                grid-area: nav;
+            }
+            
+            .item-2 {}
+            
+            .item-3 {
+                grid-area: nav;
+            }
+            
+            .item-4 {
+                grid-area: article;
+            }
+            
+            .item-5 {
+                grid-area: footer;
+            }
+        </pre>
+    </p>
+    <h2>
+        fr unit
+    </h2>
+    <p>
+    <pre>
+        instead of
+        
+        grid-template-columns:100px 50px ;
+        we can use
+        width: 80vw;
+        grid-template-columns:1fr 2fr 1fr ;
+        or
+
+        </pre>
+    </p>
+
+    <h3>Don't use padding in flex box or gris, use gap instead</h3>
+    <pre>
+        gap: 15px 25px;
+        or
+        row-gap: 15px;
+        column-gap: 25px;
+    </pre>
+    <p>
+        We also don't get space in the corners, by using gap.
+    </p>
+
+    <h2>justify and align</h2>
+    <pre>
+        justify-items: center;
+        align-items: center;
+    </pre>
+    <p>
+        stretch is default setting.
+        Don't use flex-end use end instead. 
+        <br>
+        We can also use align-self and justify self for individual items.
+    </p>
+    <h2>
+        repeat()
+    </h2>
+    <p>
+        We can also use repeat function while making the grid.
+        <pre>
+            grid-template-columns: repeat(4, 6fr);
+        </pre>
+    </p>
+
+    <h2>minmax</h2>
+    <p>
+        we can set minimum and maximum size of cell as well.
+        <pre>
+            grid-template-columns: repeat(4, minmax(100px, 3fr));
+        </pre>
+        This minmax function can be used anywhere.
+    </p>
+</body>
+
+</html>

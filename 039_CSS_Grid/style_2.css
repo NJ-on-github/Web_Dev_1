@@ -1,0 +1,38 @@
+.container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "nav nav nav" "side article article" "footer footer footer";
+    width: 80vw;
+    height: 80vh;
+    gap: 15px 25px;
+    row-gap: 15px;
+    column-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    /* grid-template-columns: repeat(4, 6fr); */
+    grid-template-columns: repeat(4, minmax(10px, 3fr));
+}
+
+.item {
+    border: 2px solid saddlebrown;
+    height: 44px;
+    width: 44px;
+}
+
+.item-1 {
+    grid-area: nav;
+}
+
+.item-2 {}
+
+.item-3 {
+    grid-area: nav;
+}
+
+.item-4 {
+    grid-area: article;
+}
+
+.item-5 {
+    grid-area: footer;
+}

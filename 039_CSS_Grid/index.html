@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <p>
+        <pre>
+            .item-4{
+                grid-row: 1/2;
+                /* 1 is starting 2 is ending */
+                /* or */
+                /* grid-row-start: 1;
+                grid-row-end: 2; */
+            
+                grid-column: 1/2;
+            }
+        </pre>
+    </p>
+    <h2>
+        Naming Grid Lines
+    </h2>
+    <p>
+        <pre>
+            grid-template-columns:100px 50px ;
+            or
+            grid-template-columns:[pehle-c] 100px [doosra-c] 50px ;
+        </pre>
+    </p>
+</body>
+</html>
