@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <!-- <div class="box"></div> -->
+    </div>
+
+    <h2>rotate</h2>
+    <code>
+        transform: rotate(45deg);
+    </code> <br>
+    or
+    <code>
+        transform: rotate(0.25turn);
+    </code> <br>
+    1 is 360 degree, 0.25 is 90 degree, 0/5 turn is 180degree
+
+    <h3>rotating on axis</h3>
+    <code>
+        transform: rotateX(45deg);
+        transform: rotateY(355deg);
+        transform: rotateZ(15deg);
+    </code> <br>
+
+    <h2>scale</h2>
+    <code>
+        transform: scale(1.8);
+        transform: scaleX(1.8);
+        transform: scaleY(1.8);
+        transform: scaleZ(1.8);
+        transform: scale3d(,,);
+    </code>
+
+    <h2>skew</h2>
+    <code>
+        transform: skew(5deg, 6deg);
+        transform: skewX(5deg);
+        transform: skewY(5deg);
+    </code>
+    <p>
+        There is no skew on z axis.
+    </p>
+
+    <h2>translate</h2>
+    <p>
+        It is most used property.
+    </p> <br>
+    <code>
+        transform: translateX(100%);
+        transform: translateX(100px);
+        transform: translateY(100%);
+        transform: translateY(100px);
+    </code>
+    <p>
+        it has negative values as well. We can use it like transform: translateY(-100%) to hide a nav bar.
+    </p>
+
+    <h2>Multiple transform properties</h2>
+    <code>
+        transform: translateY(75%) skewX(45deg) translateX(-25%) ;
+    </code>
+
+    <h2>
+        Transform origin
+    </h2>
+</body>
+
+</html>

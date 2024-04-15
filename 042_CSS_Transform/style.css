@@ -1,0 +1,30 @@
+.container {
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid rgb(63, 4, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 45px;
+    height: 45px;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotate(45deg); */
+    /* transform: rotate(0.25turn); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateZ(15deg); */
+    /* transform: scale(1.8); */
+    /* transform: scaleX(2.2); */
+    /* transform: scale3d(2.2,4.4,6.6); */
+    /* transform: skew(5deg, 6deg); */
+    /* transform: skewX(5deg); */
+    /* transform: skewY(5deg); */
+    /* transform: translate(100px); */
+    transform: translateY(75%) skewX(45deg) translateX(-25%);
+}
