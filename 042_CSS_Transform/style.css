@@ -26,5 +26,6 @@
     /* transform: skewX(5deg); */
     /* transform: skewY(5deg); */
     /* transform: translate(100px); */
-    transform: translateY(75%) skewX(45deg) translateX(-25%);
+    /* transform: translateY(75%) skewX(45deg) translateX(-25%); */
+    transform-origin: 10% 10%;
 }
