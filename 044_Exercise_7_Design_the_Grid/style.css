@@ -23,3 +23,13 @@ nav{
     cursor: pointer;
 
 }
+
+.parent-grid{
+    display: grid;
+    grid-template-columns: 3;
+}
+
+.box{
+    background-color: gainsboro;
+}
+
