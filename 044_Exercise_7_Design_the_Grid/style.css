@@ -24,12 +24,44 @@ nav{
 
 }
 
+main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.small-logo{
+    display: inline-block;
+}
+
 .parent-grid{
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    max-width: 700px;
 }
 
 .box{
     background-color: gainsboro;
+    /* display: flex; */
+    height: 90px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
+.box-text{
+    align-self: top;
+    padding: 15px;
+}
+.button{
+    /* display: inline-block; */
+    background-color: green;
+    color: white;
+    padding: 10px;
+    align-self: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
