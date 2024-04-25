@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <h2>keyframes animation-name</h2>
+    <p>
+        <pre>
+            @keyframes frame1 {
+                from{}
+                to{
+                    transform: translateX(500px);
+                }
+            }
+            animation-name: frame1;
+        </pre>
+    </p> <br>
+
+    <h2>animation-duration</h2>
+    How much time should the animation take to complete.
+    <pre>
+        animation-duration: 3s;
+    </pre> <br>
+
+    <h2>animation-iteration-count</h2>
+    How much times should the animation repeat.
+    <pre>
+        animation-iteration-count: 3s;
+    </pre> <br>
+
+    <h2>animation-timing-function</h2>
+    Properties to time within the animation.
+    <pre>
+        animation-timing-function: ease-in-out;
+    </pre> <br>
+    
+    <h2>animation-delay</h2>
+    How much time after should the animation start.
+    <pre>
+        animation-delay: 1s;
+    </pre> <br>
+
+    <h2>animation-direction</h2>
+    How much time after should the animation start.
+    <pre>
+        animation-direction: reverse;
+        (Will start animation from end position).
+        animation-direction: alternate-reverse;
+        (Will start animation from end position and repeat starting from staring positon).
+        (Can be used for simple harmonic function)
+    </pre> <br>
+
+    <h2>animation-play-state</h2>
+    It can be running or paused, ideally implemented through javascript. paused state will pause the animation wherever it is (it can be in between any animation).
+    <pre>
+        animation-play-state: paused;
+    </pre> <br>
+    
+    <h2>Shorthand Property</h2>
+    <pre>
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        animation: frame1 2s ease-in 1s  reverse;
+    </pre> We can miss a property in between as well.<br>
+
+    <h2>animation-fill-mode</h2>
+    by default - none
+    <pre>
+        animation-fill-mode: forwards;
+        (the animation will be played until the end and then will be filled with the last value of the animation. (it will stop at end position))
+        animation-fill-mode: backwards;
+        (will stay at the initial postion(position befire animation) after the animation.)
+    </pre> We can miss a property in between as well.<br>
+
+    The keyframes will be applied to the element from the start to the end of the animation. the animation-delay will start after the first keyframe is applied.
+
+    <h2>keyframes according to percentage</h2>
+    <pre>
+        @keyframes frame2 {
+            0% {
+                transform: rotate(25deg);
+            }
+        
+            25% {
+                transform: rotate(45deg);
+            }
+        }
+    </pre> <br>
+
+    <h2>Applying multiple keyframes</h2>
+    <pre>
+        animation: frame1 2s ease-in 1s forwards, frame2 2s ease-in 1s 2;
+    </pre>
+</body>
+</html>
