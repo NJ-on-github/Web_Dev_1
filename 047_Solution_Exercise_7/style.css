@@ -1,0 +1,149 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Segoe UI';
+}
+
+.logo img{
+    width: 150px;
+    /* height: 25px; */
+    /* background-color: yellow; */
+}
+
+.right ul{
+    display: flex;
+    gap: 2vw;
+}
+
+.right ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    margin: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first span{
+    font-size: 40px;
+}
+
+.first span img{
+    margin: 5px 35px}
+
+.first p{
+    font-size: 18px;
+    text-align: center;
+    width: 44vw;
+}
+
+.btn{
+    background-color: #00b6d1;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.second{
+    max-width: 50vw;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    /* because the flex direction is collumn, so to center items horizontally we use align items */
+}
+
+.small{
+    font-size: 12px;
+}
+
+.green{
+    background-color: #5cb85c;
+}
+
+.item{
+    padding: 23px;
+    background-color: rgb(235, 237, 243);
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.download :nth-child(2){
+    font-size: 23px;
+}
+
+.download img{
+    padding: 0px 12px;
+}
+
+.download{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:1145px){
+    .item{
+        padding: 23px;
+        background-color: rgb(235, 237, 243);
+        border-radius: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    
+    .item-lang{
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .btn{
+        background-color: #00b6d1;
+        color: white;
+        font-weight: 700;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 12px 0px;
+    }
+}
