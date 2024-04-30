@@ -1,0 +1,46 @@
+@keyframes vertical {
+    /* 0% {transform: translateY(-20px); */
+        /* animation-duration: 1s;} */
+
+    25% {
+        transform: translateY(-20px);
+        animation-duration: 1s;
+    }
+
+    50% {
+        transform: translateY(-40px);
+        animation-duration: 2s;
+    }
+
+    100% {
+        transform: translateY(-80px);
+        animation-duration: 3s;
+    }
+}
+
+@keyframes vertical2 {
+    from{
+    }
+    to{
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes horizontal{
+    from{}
+    to{
+        transform: translateX(80px);
+    }
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(163, 39, 39);
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: vertical2 1s cubic-bezier(0.03, 0.51, 0.88, 1) alternate infinite forwards;
+    animation: horizontal 1s linear infinite forwards, vertical2 1s cubic-bezier(0.03, 0.51, 0.88, 1) alternate infinite forwards; 
+}
