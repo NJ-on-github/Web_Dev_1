@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit & Object-cover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="aedrian-7gBwDz_9AzI-unsplash.jpg" alt="not working">
+    </div>
+
+    <p>
+        <code>
+            object-fit: cover;
+        </code>
+        fits the image to the container, covering the entire container.
+    </p> <br>
+    <p>
+        <code>
+            object-fit: contain;
+        </code>
+        fits the image to the container, but not covering the entire container.
+    </p> <br>
+    <p>
+        <code>
+            object-position: top left;
+        </code>
+        ensures that the image is positioned to show the top left corner of itself as much as it can.
+    </p> <br>
+    <p>
+        <code>
+            object-fit: scale-down;
+        </code>
+        scales down the image to fit the container.
+    </p> <br>
+    <p>
+        <code>
+            object-fit: cover;
+            object-position: 10px 40px;
+        </code>
+        10px space on left, 40px space on top.
+    </p> <br>
+    <p>
+        <code>
+            object-fit: cover;
+            object-position: 70% 70%;
+        </code>
+        The first value (70%) refers to the horizontal position. In this case, it positions the content 70% from the left edge of the container box.
+
+        The second value (70%) refers to the vertical position. Here, it positions the content 70% from the top edge of the container box.
+    </p> <br>
+
+    <h2>Background image</h2>
+    <p>
+        no open image in new tab when right click on image. The image repeats by default.
+    </p>
+
+    <h3>background-repeat</h3>
+    <p>
+        <code>
+            background-repeat: repeat-x; repeats only on x axis. <br>
+            background-repeat: repeat-y; repeats only on y axis. <br>
+            background-repeat: no-repeat; does not repeat. <br>
+        </code>
+    </p>
+    <h4>To center with background-repeat</h4>
+    <p>
+        <code>
+            background-repeat: no-repeat; does not repeat. <br>
+            background-position: center center;
+        </code>
+    </p>
+    <h3>background-clip</h3>
+    <p>
+        <code>
+            background-clip: border-box; clips the background to the border box. <br>
+            background-clip: padding-box; clips the background to the padding box. <br>
+            background-clip: content-box; clips the background to the content box. <br>
+        </code>
+    </p>
+    <div class="container-2" style="font-size: 70px;" >
+        oh yeah Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus tenetur odio enim veritatis incidunt quis consectetur optio cupiditate? Fugiat pariatur similique cupiditate minus magnam veniam qui itaque atque natus, earum eum nam voluptate ad unde dolor temporibus aspernatur! Quas nisi totam vel a! Itaque, maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquid beatae, quos incidunt at ipsum mollitia ratione consequatur vitae vel modi. Necessitatibus, quod?
+    </div>
+</body>
+</html>

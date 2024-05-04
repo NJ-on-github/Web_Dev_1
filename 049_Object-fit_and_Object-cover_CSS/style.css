@@ -1,0 +1,34 @@
+img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    /* object-fit: contain; */
+    /* object-position: 10px 40px; */
+    object-position: 70% 70%;
+    /* object-position: right bottom; */
+    /* object-fit: scale-down; */
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 230px;
+    height: 280px;
+    border: 2px solid;
+}
+
+.container-2{
+    width: 230px;
+    height: 280px;
+    border: 2px solid;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-position: center center;
+    background-image: url("aedrian-7gBwDz_9AzI-unsplash.jpg");
+    background-clip: border-box;
+    /* background-clip: padding-box;
+    background-clip: content-box;
+    background-clip: text; */
+
+}
