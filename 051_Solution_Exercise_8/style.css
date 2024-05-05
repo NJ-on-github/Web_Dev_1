@@ -1,0 +1,92 @@
+.container {
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(206, 206, 237);
+}
+
+@keyframes vertical {
+    /* 0% {transform: translateY(-20px); */
+    /* animation-duration: 1s;} */
+
+    25% {
+        transform: translateY(-20px);
+        animation-duration: 1s;
+    }
+    50% {
+        transform: translateY(-40px);
+        animation-duration: 2s;
+    }
+    100% {
+        transform: translateY(-80px);
+        animation-duration: 3s;
+    }
+}
+
+@keyframes vertical2 {
+    from {}
+    to {
+        /* transform: translateY(-100px); */
+        bottom: 80%;
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+@keyframes horizontal {
+    from {}
+    to {
+        transform: translateX(80px);
+        background-color: rgba(0, 0, 232, 0.989);
+    }
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(163, 39, 39);
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* animation: vertical2 5s cubic-bezier(0.03, 0.51, 0.88, 1) alternate infinite; */
+
+
+    animation: horizontal 3s linear infinite, vertical2 1s cubic-bezier(0.03, 0.51, 0.88, 1) alternate infinite;
+    /* animation: mix 1s cubic-bezier(0.03, 0.51, 0.88, 1) alternate infinite forwards; */
+}
+
+.container-2 {
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(206, 206, 237);
+}
+
+@keyframes animateX {
+    from{
+        left: 0;
+    }
+    
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes animateY {
+    from{
+        bottom: 0;
+    }
+    
+    to{
+        bottom: 100%;
+    }
+}
+
+.box-2 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(163, 39, 39);
+    border-radius: 70px;
+    position: absolute; 
+    animation: animateY 1s ease-out infinite alternate,  animateX 3s linear infinite;
+}
