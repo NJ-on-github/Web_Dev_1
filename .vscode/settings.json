@@ -1,3 +1,4 @@
 {
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "livePreview.defaultPreviewPath": "/052_Netflix_Clone_using_HTML_&_CSS/index.html"
 }
