@@ -45,11 +45,11 @@ nav {
     align-items: center;
     max-width: 60vw;
     margin: auto;
-    height: 64px;
+    height: 100px;
 }
 
 nav img {
-    height: 30px;
+    width: 130px;
     position: relative;
     z-index: 10;
 }
@@ -60,7 +60,7 @@ nav button {
 }
 
 .hero {
-    height: calc(100% - 64px);
+    height: calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,6 +98,8 @@ nav button {
 .seperator{
     height: 7px;
     background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
 }
 
 .btn{
@@ -156,11 +158,12 @@ nav button {
 .secImg img{
     position: relative;
     z-index: 10;
-    width: 30vw;
+    width: 555px;
 }
 
 .secImg video{
     position: absolute;
+    width: 555px;
     top: 51px;
     right: 0;
 }
@@ -168,6 +171,7 @@ nav button {
 section.first > div{
     display: flex;
     flex-direction: column;
+    padding: 34px 0px;
 }
 
 section.first > div :nth-child(1){
@@ -178,4 +182,99 @@ section.first > div :nth-child(1){
 
 section.first > div :nth-child(2){
     font-size: 24px;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq{
+    background-color: black;
+    color: white;
+}
+
+.faq-box:hover{
+    background-color: #414141;
+}
+
+.faq-box svg{
+    filter: invert(1);
+}
+
+.faq-box{
+    font-size: 24px;
+    background-color:#2d2d2d;
+    color: white;
+    padding: 24px;
+    max-width: 60vw;
+    display: flex;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .questions{
+    padding: 34px 0px;
+}
+
+footer a{
+    color: white;
+    font-size: 10px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+@media screen and (max-width: 1300px){
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .secImg img{
+        width: 305px;
+    }
+    .secImg video{
+        width: 305px;
+    }
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+    .main input {
+        padding: 7px 53px 8px 14px;
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
