@@ -14,3 +14,11 @@ for (const key in obj) {
 for (const key in obj) {
         console.log(key);
 }
+
+for (const c of "string") {
+        console.log(c);
+}
+
+// simple while loop
+
+// simple do while loop
