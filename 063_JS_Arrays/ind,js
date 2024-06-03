@@ -1,4 +1,4 @@
-let arr = [1,2,3,4,5];
+let arr = [1, 2, 3, 4, 5];
 
 console.log(arr[8]);
 console.log(arr);
@@ -6,12 +6,12 @@ console.log(arr.length);
 
 // arrays are MUTABLE
 console.log(arr[0]);
-arr[0]= 65  //this cannot be done with strings
+arr[0] = 65  //this cannot be done with strings
 console.log(arr[0]);
 
 let str = "Yeah";
 console.log(str);
-str[0]= "p"; //Doesn't work
+str[0] = "p"; //Doesn't work
 console.log(str);
 
 
@@ -27,7 +27,8 @@ console.log(arr.join(" e and a "));
 
 
 //pop
-let arr2 = [1,2,3];
+console.log("pop")
+let arr2 = [1, 2, 3];
 console.log(arr2);
 arr2.pop(); // pops the last value and returns it
 console.log(arr2);
@@ -35,3 +36,81 @@ console.log(arr2.pop());
 console.log(arr2);
 
 //push
+console.log("Push")
+console.log(arr2);
+arr2.push(5);
+console.log(arr2);
+console.log(arr2.push(9)); // returns length of array
+console.log(arr2);
+console.log(arr2.push("Yo o")); // returns length of array
+console.log(arr2);
+
+//shift
+console.log("Shift")
+console.log(arr2);
+console.log(arr2.shift()); //takes out the first element and returns it
+console.log(arr2);
+
+//unshift
+console.log("Unshift")
+console.log(arr2);
+console.log(arr2.unshift("yup")); //insert element at the beginning and returns the length of new array
+console.log(arr2);
+
+//delete
+console.log("Delete")
+console.log(arr2);
+console.log(arr2.length);
+console.log(delete arr2[3]); //deletes the element at endex
+console.log(arr2.length);
+console.log(arr2);
+console.log(arr2[3]);
+// memory is allocated in memory, but there is no value in it
+
+
+//concatenate
+console.log("Concatenate");
+let f1 = [1, 2]
+let f2 = [1, 2]
+let f3 = [1, 2]
+
+console.log(f1.concat(f2, f3)); // returns a new array, does not change the existing array
+console.log(f1.concat(f2, "hr", f3)); // returns a new array, does not change the existing array
+
+//sort
+console.log("Sort");
+let arr_u = [5, 7, 3, 6, 88, 74, 55];
+console.log(arr_u);
+arr_u.sort(); //sorts array alphabetically // MODIFIES the original array // it takes optional arguements as well
+console.log(arr_u);
+
+//splice
+console.log("Splice");
+arr = [11, 22, 33, 44, 55, 66, 77];
+console.log(arr);
+console.log(arr.splice(3,2)); //first arguement is starting index no., second number is no. of elements to take out starting from that index, returns the elements which it deletes
+console.log(arr);
+
+// we can also use splice to add numbers
+arr = [11, 22, 33, 44, 55, 66, 77];
+console.log(arr);
+console.log("Deleting - ", arr.splice(1,3, 666, 777)); //inserts the given values in array after deleting the elements.
+console.log(arr);
+console.log("Deleting - ", arr.splice(1,1, 666, 777));
+
+//slice
+arr = [11, 22, 33, 44, 55, 66, 77];
+console.log(arr);
+console.log("Slice - ", arr.slice(2)); //takes two arguements - starting index, ending index(not included) //returns the deleted values // DOES NOT CHANGES the original array
+console.log(arr);
+console.log("Slice - ", arr.slice(2, 4));
+console.log(arr);
+console.log("Slice - ", arr.slice(-3)); //Returns a copy of a section of an array. For both start and end, a negative index can be used to indicate an offset from the end of the array. For example, -2 refers to the second to last element of the array.
+
+//reverse
+arr = [11, 22, 33, 44, 55, 66, 77];
+console.log(arr);
+arr.reverse(); //Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
+console.log(arr);
+console.log("Reverse - ", arr.reverse()); 
+
