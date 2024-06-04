@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        img {
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    DOM is used so that the entire html can be mapped as a document.
+    <br>
+    <br>
+    DOM is mapping of entire body in an object.
+
+    <code>
+        console.log(document.body); // this gives
+    </code>
+    <p>
+        This gives the entire document. It is used to change an element, text inside an element etc. <br>
+        <br>
+        document.body means body as a javascript object.
+    </p>
+    <br><br><br><br><br>
+    <img src="Screenshot 2024-06-04 114517.png" alt="flowchart image" >
+    <br>
+    To select any element we have to go through this DOM, we may want to search through a particular node, we may want to select one or multiple elements through a node, maybe using id selectors or class selectors.
+    <script>
+        document.title = "asfasfNew Title of DOM";
+        console.log(document.title);
+        console.log(document.body); // this gives whole body as object
+        document.body.style.backgroundColor = "green"; //this injects inline CSS.
+    </script>
+</body>
+</html>
