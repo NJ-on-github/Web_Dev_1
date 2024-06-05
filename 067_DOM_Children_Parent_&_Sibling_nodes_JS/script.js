@@ -1,3 +1,5 @@
+//Note that many of the following elements return what looks like an array, but it is a collection.
+
 console.log("document.body.childNodes");
 console.log(document.body.childNodes);
 console.log("document.body.childNodes[1]");
