@@ -180,7 +180,6 @@ document.body.style.margin = "0px";
 document.body.style.padding = "0px";
 document.body.style.background = "rgb(66, 64, 64)";
 
-createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 560000, 7, "31:22", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw");
 
 function viewFormat(v) {
     if(v<0)
@@ -226,73 +225,76 @@ function viewFormat(v) {
         return v.toString();
 }
 
-// console.log(yy(7700000));
+//Testing the function
 
-console.log("testing");
-console.log("700.5 billion ->");
-console.log(viewFormat(700500000000));
+// console.log("testing");
+// console.log("700.5 billion ->");
+// console.log(viewFormat(700500000000));
 
-console.log("700 billion ->");
-console.log(viewFormat(700000000000));
+// console.log("700 billion ->");
+// console.log(viewFormat(700000000000));
 
-console.log("70.5 billion ->");
-console.log(viewFormat(70500000000));
+// console.log("70.5 billion ->");
+// console.log(viewFormat(70500000000));
 
-console.log("70 billion ->");
-console.log(viewFormat(70000000000));
+// console.log("70 billion ->");
+// console.log(viewFormat(70000000000));
 
-console.log("7.5 billion ->");
- console.log(viewFormat(7500000000));
+// console.log("7.5 billion ->");
+//  console.log(viewFormat(7500000000));
 
-console.log("7 billion ->");
-console.log(viewFormat(7000000000));
+// console.log("7 billion ->");
+// console.log(viewFormat(7000000000));
 
-console.log("700.5 million ->");
-console.log(viewFormat(700500000));
+// console.log("700.5 million ->");
+// console.log(viewFormat(700500000));
 
-console.log("700 million ->");
-console.log(viewFormat(700000000));
+// console.log("700 million ->");
+// console.log(viewFormat(700000000));
 
-console.log("70.5 million ->");
-console.log(viewFormat(70500000));
+// console.log("70.5 million ->");
+// console.log(viewFormat(70500000));
 
-console.log("70 million ->");
-console.log(viewFormat(70000000));
+// console.log("70 million ->");
+// console.log(viewFormat(70000000));
 
-console.log("7.5 million ->");
-console.log(viewFormat(7500000));
+// console.log("7.5 million ->");
+// console.log(viewFormat(7500000));
 
-console.log("7 million ->");
-console.log(viewFormat(7000000));
+// console.log("7 million ->");
+// console.log(viewFormat(7000000));
 
-console.log("700.5 thousand ->");
-console.log(viewFormat(700500));
+// console.log("700.5 thousand ->");
+// console.log(viewFormat(700500));
 
-console.log("700 thousand ->");
-console.log(viewFormat(700000));
+// console.log("700 thousand ->");
+// console.log(viewFormat(700000));
 
-console.log("70.5 thousand ->");
-console.log(viewFormat(70500));
+// console.log("70.5 thousand ->");
+// console.log(viewFormat(70500));
 
-console.log("70 thousand ->");
-console.log(viewFormat(70000));
+// console.log("70 thousand ->");
+// console.log(viewFormat(70000));
 
-console.log("7.5 thousand ->");
-console.log(viewFormat(7500));
+// console.log("7.5 thousand ->");
+// console.log(viewFormat(7500));
 
-console.log("7 thousand ->");
-console.log(viewFormat(7000));
+// console.log("7 thousand ->");
+// console.log(viewFormat(7000));
 
-console.log("700.5 hundred ->");
-console.log(viewFormat(70050));
+// console.log("700.5 hundred ->");
+// console.log(viewFormat(70050));
 
-console.log("700 hundred->");
-console.log(viewFormat(70000));
+// console.log("700 hundred->");
+// console.log(viewFormat(70000));
 
-console.log("70.5 hundred->");
-console.log(viewFormat(7050));
+// console.log("70.5 hundred->");
+// console.log(viewFormat(7050));
 
-console.log(viewFormat(7000));
+// console.log(viewFormat(7000));
 
-console.log(viewFormat(7500));
-console.log(viewFormat(100));
+// console.log(viewFormat(7500));
+  
+// console.log(viewFormat(100));
+
+createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 560000, 7, "31:22", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw");
