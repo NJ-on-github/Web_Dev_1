@@ -46,7 +46,7 @@
 let prom1 = new Promise((resolve, reject) => {
     console.log("Running Promise 1");
     let a = Math.random();
-    if (a > 0.1) {
+    if (a > 0.3) {
         reject("No random number was not supporting you 1")
     }
     else {
@@ -68,7 +68,7 @@ prom1.then((a) => {
 let prom2 = new Promise((resolve, reject) => {
     let a = Math.random();
     console.log("Running Promise 2");
-    if (a < 0.9) {
+    if (a < 0.5) {
         reject("No random number was not supporting you 2")
     }
     else {
@@ -117,10 +117,10 @@ prom2.then((a) => {
 //         console.log("Running promise allSettled then")
 //         console.log(a)
 //     })
-//     // .catch((err) => {
-//         //     console.log("Running promise allSettled catch")
-//     //     console.log(err)
-//     // })
+//     .catch((err) => {
+//             console.log("Running promise allSettled catch")
+//         console.log(err)
+//     })
 
 //     // returns an array of Object with status and value or status and reason if it was rejected.
 //     // only then part is required
@@ -158,7 +158,7 @@ prom2.then((a) => {
 //             console.log(err)
 //         })
     
-//     // returns the first resolved promise. Throws aggregate error if all promises are rejected.
+//     // waits for all of them to execute, returns the first resolved promise. Throws aggregate error if all promises are rejected.
 // }
 
 

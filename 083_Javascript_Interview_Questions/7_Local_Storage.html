@@ -1,0 +1,75 @@
+<!--The Local Storage Manager: You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+    <style>
+
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(43, 43, 43);
+        color: aliceblue;
+    }
+    </style>
+</head>
+<body>
+    <button>Add Note here</button>
+    <script src="7_script.js"></script>
+    <script>
+        document.write("hello");
+
+
+        let a = false;
+        localStorage.setItem("key", a);
+
+        //runs even if retrieved value is false
+        if (localStorage.getItem("key")){
+            console.log("if \"localStorage.getItem(\"key\")\" ")
+            console.log(true)
+        }
+        console.log(localStorage.getItem("key"));
+
+        //
+        let str = "str"
+        // localStorage.setItem(", str);
+        if(!(localStorage.getItem("username"))){
+            let username = prompt("Enter your name");
+            localStorage.setItem("username", username);
+        }
+        console.log(localStorage.getItem("username"));
+        document.write(localStorage.getItem("username"));
+
+
+        //localStorage.getItem returns null if the key does not exist.
+
+
+        //to store a object in storage we first convert it to string
+
+        let obj = {
+            name: "John",
+            age: 30
+        }
+
+        console.log((obj));
+        console.log(JSON.stringify(obj));
+        localStorage.setItem("obj", JSON.stringify(obj));
+        console.log(localStorage.getItem("obj"));
+        console.log(JSON.parse(localStorage.getItem("obj")));
+
+        //JSON.stringify is used convert an object into a string. So that we can store it in local storage.
+        //JSON.parse is used convert a string back into object.
+
+
+        //if null is given in condition the loop or if will not execute
+        if(null){
+            console.log("true");
+            document.write("true");
+        }
+
+        
+    </script>
+</body>
+</html>
