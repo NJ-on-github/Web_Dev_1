@@ -2,3 +2,4 @@ saveweb2zip-com-www-netflix-com/
 *.msi
 *.txt
 *.zip
+node_modules/
