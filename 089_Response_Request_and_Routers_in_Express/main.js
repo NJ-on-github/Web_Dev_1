@@ -1,6 +1,9 @@
 const express = require('express')
+const about = require('./routes/about')
 const app = express()
 const port = 3000
+
+
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -35,3 +38,6 @@ app.listen(port, () => {
 app.get('/files' , (req, res)=>{
     res.download('./templates/index.html', { root: __dirname })
 })
+
+//using app.use()
+app.use('/about', about)
