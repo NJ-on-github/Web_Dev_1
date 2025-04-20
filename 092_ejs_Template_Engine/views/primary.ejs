@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: navy;
+            color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    Hi This is the primary template.
+    <h1>Welcome to the primary template</h1>
+    <%= v1 %>
+    <%= arr[0] %>
+    <%- include('heading2') %>
+    <!-- <%- include('heading2',{}) %> // we can pass any value to the include template -->
+    <%- include('heading2', {v1: 'Hello from primary.ejs'}) %> 
+    <!-- // we can pass any value to the include template -->
+</body>
+</html>
